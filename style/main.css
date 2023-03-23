@@ -19,7 +19,7 @@ h4 {
     text-align: center;
     font-family:'Courier New', Courier, monospace;
     font-size: 2rem;
-    margin: 7.5% 0;
+    margin: 3% 0;
 }
 p {
     color: whitesmoke;
@@ -92,3 +92,10 @@ main {
         "grid-item1 grid-item2 grid-item3";
 }
 
+@media screen and (max-width:897px) {
+    h4 {
+        font-size: 1.5rem;
+        margin-top: 11%;
+    }
+    
+}
