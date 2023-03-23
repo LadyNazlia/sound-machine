@@ -1,9 +1,13 @@
-function playAudio(e) {
+function playAudioClick(e) {
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-    console.log(audio);
     if(!audio) return; //stops function because audio doesn't exist of the key that was pressed
     audio.currentTime = 0;
     audio.play();
 }
 
-window.addEventListener('keydown', playAudio);
+// function playAudioTouch(e) {
+//     const button = document.getElementById(`button["$]`)
+// }
+
+window.addEventListener('keydown', playAudioClick);
+// window.addEventListener('click', playAudioTouch);
